@@ -191,36 +191,81 @@
 
 // DERS 5 : DEĞİŞKEN UYGULAMLARI (ÖRNEKLER) +++++++++++++++++++++++++++++++++++++++++++++++++
 
-var customerName = 'arzu';
-console.log(customerName);
+// var customerName = 'arzu';
+// console.log(customerName);
 
-var customerSurname = 'kaya';
-console.log(customerSurname);
+// var customerSurname = 'kaya';
+// console.log(customerSurname);
 
-var customerId = '11111111111';
-console.log(customerId);
+// var customerId = '11111111111';
+// console.log(customerId);
 
-var order1 = 100;
-var order2 = 150;
-var total = order1+order2;
-console.log(total);
+// var order1 = 100;
+// var order2 = 150;
+// var total = order1+order2;
+// console.log(total);
 
-var gender = 'kadın';
-console.log(gender);
+// var gender = 'kadın';
+// console.log(gender);
 
-var address ={
-    city : 'kocaeli',
-    district : 'izmit',
-    body : 'abc sokak. no:45'
-}
-console.log(address);
+// var address ={
+//     city : 'kocaeli',
+//     district : 'izmit',
+//     body : 'abc sokak. no:45'
+// }
+// console.log(address);
 
-var hobbies = ['dizi', 'film', 'kitap'];
-console.log(hobbies);
-
-
+// var hobbies = ['dizi', 'film', 'kitap'];
+// console.log(hobbies);
 
 
+
+// DERS 6 : ÖRNEKLER +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Operatörler
+
+let val;
+const a = 10;
+const b = 2;
+const c = 2;
+
+// 1- Arimatik Operatörler
+
+val = a + b;
+val = a - b;
+val = a * b;
+val = a / b;
+val = a % b;
+
+// 2- Atama Operatörler
+
+val = a;
+val +=a;
+val *=a;
+val +=a;
+
+// 3- Karşılaştırma Operatörler
+
+val = a==b;
+val = b==c;
+val = b===c;
+val = '5'===5;
+val = '5'==5;
+val = a!=b;
+val = a > b;
+val = 5 > 5;
+val = 5 >= 5;
+
+// 4- Mantıksal Operatörler
+
+// && (and)
+
+// || (or)
+
+// ! (not)
+
+console.log(val);
+console.log(typeof val);
 
 
 
