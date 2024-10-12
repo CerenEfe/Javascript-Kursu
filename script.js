@@ -270,19 +270,42 @@
 
 // DERS 7 : OPERATÖRLER ÖRNEK UYGULAMA +++++++++++++++++++++++++++++++++++++++++++++++++
 
-let indexCan;
-let indexAda;
+// let indexCan;
+// let indexAda;
 
-const kgCan = 60;
-const kgAda = 40;
+// const kgCan = 60;
+// const kgAda = 40;
 
-const heightCan = 1.70;
-const heightAda = 1.50;
+// const heightCan = 1.70;
+// const heightAda = 1.50;
 
-indexCan = (kgCan) / (heightCan * heightCan);
-indexAda = (kgAda) / (heightAda * heightAda);
+// indexCan = (kgCan) / (heightCan * heightCan);
+// indexAda = (kgAda) / (heightAda * heightAda);
 
-console.log(indexCan.toFixed(), indexAda.toFixed());
+// console.log(indexCan.toFixed(), indexAda.toFixed());
+
+
+// DERS 8 : Dates & Times +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// data object
+
+let d = new Date;
+
+// set methods
+d.setFullYear(2020);
+d.setDate(15);
+d.setHours(12);
+d.setSeconds(20);
 
 
 
+//get methods
+console.log(d.getDate());
+console.log(d.getFullYear());
+console.log(d.getDay());
+console.log(d.getHours());
+console.log(d.getSeconds());
+
+
+console.log(d);
+console.log(typeof d);
