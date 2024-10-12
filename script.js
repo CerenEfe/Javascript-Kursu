@@ -1,6 +1,6 @@
 // "a"
 
-// DERS 2 : DEĞİŞKENLER
+// DERS 2 : DEĞİŞKENLER +++++++++++++++++++++++++++++++++++++++++++++++++
 
 // var age;
 // console.log(age);
@@ -60,7 +60,7 @@
 // const değer sabit olsun ve hiç değişmesin diye var.
 
 
-// DERS 3 : DEĞİŞKEN TİPLERİ
+// DERS 3 : DEĞİŞKEN TİPLERİ +++++++++++++++++++++++++++++++++++++++++++++++++
 
 // 1- Primitive Types ----------------------
 
@@ -110,87 +110,113 @@
 
 // console.log(typeof calculateAge);
 
-// DERS 4 : TÜR DÖNÜŞÜMÜ
+// DERS 4 : TÜR DÖNÜŞÜMÜ +++++++++++++++++++++++++++++++++++++++++++++++++
 
 // örnek 1 --------
 
-let num1 = '5';
-console.log(typeof num1);
+// let num1 = '5';
+// console.log(typeof num1);
 
-let num2 = '5';
-let num3 = '10';
+// let num2 = '5';
+// let num3 = '10';
 
-console.log(num2 + num3);
+// console.log(num2 + num3);
 
-// örnek 2 --------
+// // örnek 2 --------
 
-let sayi1 = Number('2');
-let sayi2 = Number('2');
+// let sayi1 = Number('2');
+// let sayi2 = Number('2');
 
-let total = sayi1+sayi2;
+// let total = sayi1+sayi2;
 
-console.log(total);
-console.log(typeof total);
+// console.log(total);
+// console.log(typeof total);
 
 // Number to string
 
-let val;
-val = String(100);
+// let val;
+// val = String(100);
 
-console.log(val);
-console.log(typeof val);
-console.log(val.length);
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.length);
 
-// arry to string
+// // arry to string
 
-let abc;
-abc = String([1,2,3,4]);
+// let abc;
+// abc = String([1,2,3,4]);
 
-console.log(abc);
-console.log(typeof abc);
-console.log(abc.length);
+// console.log(abc);
+// console.log(typeof abc);
+// console.log(abc.length);
 
-//toString
+// //toString
 
-val = (10).toString();
+// val = (10).toString();
 
-console.log(val);
-console.log(typeof val);
-console.log(val.length);
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.length);
 
 //string to number
 
-val = Number('10');
+// val = Number('10');
 
-console.log(val);
-console.log(typeof val);
-console.log(val.length);
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.length);
 //length sadece stringlere özgü 
 
 //parseInt
 //parseFloat
 
-val = parseInt('10');          // örnek 1 -----
+// val = parseInt('10');          // örnek 1 -----
 
-console.log(val);
-console.log(typeof val);
-console.log(val.toFixed(2));
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.toFixed(2));
 
-val = parseInt('10.5');        // örnek 1 -----
+// val = parseInt('10.5');        // örnek 1 -----
 
-console.log(val);
-console.log(typeof val);
-console.log(val.toFixed(2));
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.toFixed(2));
 
-val = parseFloat('10.5');      // örnek 1 -----
+// val = parseFloat('10.5');      // örnek 1 -----
 
-console.log(val);
-console.log(typeof val);
-console.log(val.toFixed(2));
-
-
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.toFixed(2));
 
 
+// DERS 5 : DEĞİŞKEN UYGULAMLARI (ÖRNEKLER) +++++++++++++++++++++++++++++++++++++++++++++++++
+
+var customerName = 'arzu';
+console.log(customerName);
+
+var customerSurname = 'kaya';
+console.log(customerSurname);
+
+var customerId = '11111111111';
+console.log(customerId);
+
+var order1 = 100;
+var order2 = 150;
+var total = order1+order2;
+console.log(total);
+
+var gender = 'kadın';
+console.log(gender);
+
+var address ={
+    city : 'kocaeli',
+    district : 'izmit',
+    body : 'abc sokak. no:45'
+}
+console.log(address);
+
+var hobbies = ['dizi', 'film', 'kitap'];
+console.log(hobbies);
 
 
 
