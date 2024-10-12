@@ -285,27 +285,59 @@
 // console.log(indexCan.toFixed(), indexAda.toFixed());
 
 
-// DERS 8 : Dates & Times +++++++++++++++++++++++++++++++++++++++++++++++++
+// DERS 8 : DATES & TIMES +++++++++++++++++++++++++++++++++++++++++++++++++
 
 // data object
 
-let d = new Date;
+// let d = new Date;
 
 // set methods
-d.setFullYear(2020);
-d.setDate(15);
-d.setHours(12);
-d.setSeconds(20);
+
+// d.setFullYear(2020);
+// d.setDate(15);
+// d.setHours(12);
+// d.setSeconds(20);
 
 
 
 //get methods
-console.log(d.getDate());
-console.log(d.getFullYear());
-console.log(d.getDay());
-console.log(d.getHours());
-console.log(d.getSeconds());
+
+// console.log(d.getDate());
+// console.log(d.getFullYear());
+// console.log(d.getDay());
+// console.log(d.getHours());
+// console.log(d.getSeconds());
 
 
-console.log(d);
-console.log(typeof d);
+// console.log(d);
+// console.log(typeof d);
+
+
+// DERS 9 : DATES & TIMES UYGULAMALARI +++++++++++++++++++++++++++++++++++++++++++++++++
+
+let dt = new Date;
+
+console.log(dt);
+console.log(dt.getDay());
+console.log(dt.getMonth());
+console.log(dt.getFullYear());
+
+var dtA = new Date('8/7/2010 23:01:17');
+var dtB = new Date(2010,7,8,23,1,7);
+
+console.log(dtA);
+console.log(dtB);
+
+// örnek 2
+
+var dtC = new Date('1/1/1999');
+var dayOfMonts = dtC.getDate();
+dtC.setDate(dayOfMonts -1 );
+
+console.log(dtC);
+
+
+
+
+
+
