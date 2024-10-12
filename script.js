@@ -220,41 +220,41 @@
 
 
 
-// DERS 6 : ÖRNEKLER +++++++++++++++++++++++++++++++++++++++++++++++++
+// DERS 6 : OPERATÖRLER +++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Operatörler
 
-let val;
-const a = 10;
-const b = 2;
-const c = 2;
+// let val;
+// const a = 10;
+// const b = 2;
+// const c = 2;
 
 // 1- Arimatik Operatörler
 
-val = a + b;
-val = a - b;
-val = a * b;
-val = a / b;
-val = a % b;
+// val = a + b;
+// val = a - b;
+// val = a * b;
+// val = a / b;
+// val = a % b;
 
 // 2- Atama Operatörler
 
-val = a;
-val +=a;
-val *=a;
-val +=a;
+// val = a;
+// val +=a;
+// val *=a;
+// val +=a;
 
 // 3- Karşılaştırma Operatörler
 
-val = a==b;
-val = b==c;
-val = b===c;
-val = '5'===5;
-val = '5'==5;
-val = a!=b;
-val = a > b;
-val = 5 > 5;
-val = 5 >= 5;
+// val = a==b;
+// val = b==c;
+// val = b===c;
+// val = '5'===5;
+// val = '5'==5;
+// val = a!=b;
+// val = a > b;
+// val = 5 > 5;
+// val = 5 >= 5;
 
 // 4- Mantıksal Operatörler
 
@@ -264,14 +264,25 @@ val = 5 >= 5;
 
 // ! (not)
 
-console.log(val);
-console.log(typeof val);
+// console.log(val);
+// console.log(typeof val);
 
 
+// DERS 7 : OPERATÖRLER ÖRNEK UYGULAMA +++++++++++++++++++++++++++++++++++++++++++++++++
 
+let indexCan;
+let indexAda;
 
+const kgCan = 60;
+const kgAda = 40;
 
+const heightCan = 1.70;
+const heightAda = 1.50;
 
+indexCan = (kgCan) / (heightCan * heightCan);
+indexAda = (kgAda) / (heightAda * heightAda);
+
+console.log(indexCan.toFixed(), indexAda.toFixed());
 
 
 
