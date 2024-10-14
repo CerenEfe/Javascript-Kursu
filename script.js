@@ -315,26 +315,57 @@
 
 // DERS 9 : DATES & TIMES UYGULAMALARI +++++++++++++++++++++++++++++++++++++++++++++++++
 
-let dt = new Date;
+// let dt = new Date;
 
-console.log(dt);
-console.log(dt.getDay());
-console.log(dt.getMonth());
-console.log(dt.getFullYear());
+// console.log(dt);
+// console.log(dt.getDay());
+// console.log(dt.getMonth());
+// console.log(dt.getFullYear());
 
-var dtA = new Date('8/7/2010 23:01:17');
-var dtB = new Date(2010,7,8,23,1,7);
+// var dtA = new Date('8/7/2010 23:01:17');
+// var dtB = new Date(2010,7,8,23,1,7);
 
-console.log(dtA);
-console.log(dtB);
+// console.log(dtA);
+// console.log(dtB);
 
-// örnek 2
+// // örnek 2
 
-var dtC = new Date('1/1/1999');
-var dayOfMonts = dtC.getDate();
-dtC.setDate(dayOfMonts -1 );
+// var dtC = new Date('1/1/1999');
+// var dayOfMonts = dtC.getDate();
+// dtC.setDate(dayOfMonts -1 );
 
-console.log(dtC);
+// console.log(dtC);
+
+
+// DERS 10 : STRINGS +++++++++++++++++++++++++++++++++++++++++++++++++
+
+const firstName = 'ceren';
+const surName = 'efe';
+const age = 23;
+let val;
+
+// string concatenation
+
+val = firstName + ' ' + surName;
+val = 'benim adım' + ' ' + firstName + ' ' + surName + ' ve yaşım ' + age + ' izmit\'te yaşıyorum';
+
+// string concat
+val = firstName.concat(' ',surName);
+
+// string length
+//val = val.length;
+
+// string uppercase - lowercase
+val = val.toUpperCase();
+val = val.toLowerCase();
+
+//val = val[4];
+val = val.indexOf('e');
+
+console.log(val);
+console.log(typeof val);
+
+
 
 
 
