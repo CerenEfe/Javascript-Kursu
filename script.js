@@ -339,36 +339,60 @@
 
 // DERS 10 : STRINGS +++++++++++++++++++++++++++++++++++++++++++++++++
 
-const firstName = 'ceren';
-const surName = 'efe';
-const age = 23;
-let val;
+// const firstName = 'ceren';
+// const surName = 'efe';
+// const age = 23;
+// let val;
 
 // string concatenation
 
-val = firstName + ' ' + surName;
-val = 'benim adım' + ' ' + firstName + ' ' + surName + ' ve yaşım ' + age + ' izmit\'te yaşıyorum';
+// val = firstName + ' ' + surName;
+// val = 'benim adım' + ' ' + firstName + ' ' + surName + ' ve yaşım ' + age + ' izmit\'te yaşıyorum';
 
 // string concat
-val = firstName.concat(' ',surName);
+// val = firstName.concat(' ',surName);
 
-// string length
-//val = val.length;
+// // string length
+// //val = val.length;
 
-// string uppercase - lowercase
-val = val.toUpperCase();
-val = val.toLowerCase();
+// // string uppercase - lowercase
+// val = val.toUpperCase();
+// val = val.toLowerCase();
 
-//val = val[4];
-val = val.indexOf('e');
+// //val = val[4];
+// val = val.indexOf('e');
 
-console.log(val);
-console.log(typeof val);
-
-
+// console.log(val);
+// console.log(typeof val);
 
 
 
 
+// DERS 11 : ARRAYS +++++++++++++++++++++++++++++++++++++++++++++++++
 
+
+// let names = ['ceren','çınar','gül','oğuz'];
+// let years = [2000, 2001,2002,2003];
+// let mix = ['ceren', 'efe', 2001, null, undefined, ['sinema','kitap']];
+
+
+// // get array item
+// console.log(names[0]);
+// console.log(mix[2]);
+
+// // set array item
+// names[0] = 'cemre';
+// names[4] = 'emel';
+
+// //
+// console.log(names[0]);
+// //
+
+
+// console.log(names);
+// console.log(typeof names);
+// console.log(names.length);
+
+// console.log(years);
+// console.log(mix);
 
