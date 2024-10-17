@@ -400,38 +400,100 @@
 // DERS 12 : IF / ELSE +++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-const firstName = 'sena';
+// const firstName = 'sena';
+// const age = 19;
+// const isStudent = false;
+// const school = 'university';
+
+// if (firstName === 'sena'){
+//     console.log('Merhaba Sena');
+// }
+
+// if (age === 19){
+//     console.log('Yaşınız 19');
+// }
+
+// if (isStudent){
+//     console.log('Evet Öğrencisiniz')
+// }else{
+//     console.log('Öğrenci falan değilsiniz');
+// }
+
+// if (age>= 18){
+//     console.log('ehliyet alabilirsiniz');
+// } else {
+//     console.log('büyü de gel');
+// }
+
+// // undefined
+
+// let id = '16376383';
+
+// if (typeof id !== 'undefined'){
+//     console.log('id: '+id);
+// } else {
+//     console.log('no id');
+// }
+
+
+// DERS 13 : IF / ELSE - SWİTCH STATEMENTS +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// switch statements
+
+// let categoriy = 'beyaz eşya';
+
+// switch(categoriy){
+
+//     case 'telefon':
+//         console.log('telefon kategorisi');
+//     break;
+    
+//     case 'bilgisayar':
+//         console.log('bilgisayar kategorisi');
+//     break;
+
+//     default:
+//         console.log('yanlış kategori');
+// }
+
+
+// let day;
+
+// switch (new Date().getDay()){
+//     case 0:
+//     case 6:
+//         day = 'Hafta sonu';
+//         break;
+        
+//     case 1:
+//     case 2: 
+//     case 3:
+//     case 4: 
+//     case 5: 
+//         day = 'Hafta içi';
+//         break;
+// }
+
+// console.log('Bugün ' + day);
+
+
 const age = 19;
-const isStudent = false;
-const school = 'university';
+const firstName = 'sena';
 
-if (firstName === 'sena'){
-    console.log('Merhaba Sena');
+switch(true){
+    case age >= 0 && age <= 12:
+        console.log(firstName + ' çocuk');
+    break;
+    
+    case age >= 13 && age <= 19:
+        console.log(firstName + ' ergen');
+    break;
+
+    default:
+        console.log(firstName + ' yetişkin');
 }
 
-if (age === 19){
-    console.log('Yaşınız 19');
-}
 
-if (isStudent){
-    console.log('Evet Öğrencisiniz')
-}else{
-    console.log('Öğrenci falan değilsiniz');
-}
 
-if (age>= 18){
-    console.log('ehliyet alabilirsiniz');
-} else {
-    console.log('büyü de gel');
-}
 
-// undefined
-
-let id = '16376383';
-
-if (typeof id !== 'undefined'){
-    console.log('id: '+id);
-} else {
-    console.log('no id');
-}
 
