@@ -396,3 +396,42 @@
 // console.log(years);
 // console.log(mix);
 
+
+// DERS 12 : IF / ELSE +++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+const firstName = 'sena';
+const age = 19;
+const isStudent = false;
+const school = 'university';
+
+if (firstName === 'sena'){
+    console.log('Merhaba Sena');
+}
+
+if (age === 19){
+    console.log('Yaşınız 19');
+}
+
+if (isStudent){
+    console.log('Evet Öğrencisiniz')
+}else{
+    console.log('Öğrenci falan değilsiniz');
+}
+
+if (age>= 18){
+    console.log('ehliyet alabilirsiniz');
+} else {
+    console.log('büyü de gel');
+}
+
+// undefined
+
+let id = '16376383';
+
+if (typeof id !== 'undefined'){
+    console.log('id: '+id);
+} else {
+    console.log('no id');
+}
+
