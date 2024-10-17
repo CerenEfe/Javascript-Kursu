@@ -477,23 +477,40 @@
 // console.log('Bugün ' + day);
 
 
-const age = 19;
-const firstName = 'sena';
+// const age = 19;
+// const firstName = 'sena';
 
-switch(true){
-    case age >= 0 && age <= 12:
-        console.log(firstName + ' çocuk');
-    break;
+// switch(true){
+//     case age >= 0 && age <= 12:
+//         console.log(firstName + ' çocuk');
+//     break;
     
-    case age >= 13 && age <= 19:
-        console.log(firstName + ' ergen');
-    break;
+//     case age >= 13 && age <= 19:
+//         console.log(firstName + ' ergen');
+//     break;
 
-    default:
-        console.log(firstName + ' yetişkin');
+//     default:
+//         console.log(firstName + ' yetişkin');
+// }
+
+
+// DERS 14 : KOŞULLU DURUM UYGULAMASI +++++++++++++++++++++++++++++++++++++++++++++++++
+
+var result = prompt('who\'s there ?');
+
+if (result == 'cancel'){
+    console.log('cancelled');
+}else if (result == 'admin'){
+    
+    var password = prompt('enter your password: ');
+
+    if(password == 'cancel'){
+        console.log('cancelled');    
+    }else if(password == '1234'){
+        console.log('welcome admin');
+    }
+}else{
+    console.log('seni tanımıyorum');
 }
-
-
-
 
 
