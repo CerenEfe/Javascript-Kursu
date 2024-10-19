@@ -571,27 +571,48 @@
 // DERS 16 : DÖNGÜLER +++++++++++++++++++++++++++++++++++++++++++++++++
 
 // döngüler - loops
-// for döngüsü
 
-for(let i=0; i<=10; i++){
+// 1-) for döngüsü
 
-    if(i == 3){
-        console.log('en sevdiğim sayı: '+i)
-        continue;
-    }
+// for(let i=0; i<=10; i++){
+//     console.log(i);
+// }
 
-    if(i == 6){
-        console.log('en sevmediğim sayı: 6')
-        break;
-    }
-    console.log(i);
-}
+// örnek 1
+
+// for(let i=0; i<=10; i++){
+
+//     if(i == 3){
+//         console.log('en sevdiğim sayı: '+i)
+//         continue;
+//     }
+
+//     if(i == 6){
+//         console.log('en sevmediğim sayı: 6')
+//         break;
+//     }
+//     console.log(i);
+// }
 
 
+// 2-) while döngüsü
 
 
+// örnek 2
 
+// let i =0;
+// while(i<10){
+//     console.log(i);
+//     i++;
+// }
 
+// 3-) do-while döngüsü
+
+// let i=0;
+// do{
+//     console.log(i);
+//     i++;
+// }while(i<10)
 
 
 
