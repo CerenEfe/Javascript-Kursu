@@ -518,50 +518,81 @@
 
 // object literals
 
-let val;
+// let val;
 
-let person = {
-    firstName : 'ceren',
-    lastName : 'efe',
-    age : 7,
-    hobbies : ['music', 'book'],
-    address : {
-        city : 'kocaeli',
-        country : 'türkiye'
-    },
-    getBirthYear : function(){
-        return 2018 - this.age;
+// let person = {
+//     firstName : 'ceren',
+//     lastName : 'efe',
+//     age : 7,
+//     hobbies : ['music', 'book'],
+//     address : {
+//         city : 'kocaeli',
+//         country : 'türkiye'
+//     },
+//     getBirthYear : function(){
+//         return 2018 - this.age;
+//     }
+// };
+
+// val = person;
+// val = person.firstName;
+// val = person.lastName;
+// val = person['firstName'];
+// val = person.age;
+// val = person.hobbies;
+// val = person.hobbies[1];
+// val = person.hobbies.length;
+// val = person.address;
+// val = person.address.city;
+// val = person.address['city'];
+// val = person.getBirthYear();
+
+
+// console.log(val);
+// console.log(typeof person);
+
+// // örnek 2
+
+// let people = [
+//                      {firstName : 'ceren', lastName : 'efe'},
+//                      {firstName : 'ali', lastName : 'turan'},
+//                      {firstName : 'veli', lastName : 'kaya'},
+//             ];
+
+// val = people;
+// val = people[2];
+// val = people[1].firstName;
+
+// console.log(val);
+// console.log(typeof people);
+
+
+
+// DERS 16 : DÖNGÜLER +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// döngüler - loops
+// for döngüsü
+
+for(let i=0; i<=10; i++){
+
+    if(i == 3){
+        console.log('en sevdiğim sayı: '+i)
+        continue;
     }
-};
 
-val = person;
-val = person.firstName;
-val = person.lastName;
-val = person['firstName'];
-val = person.age;
-val = person.hobbies;
-val = person.hobbies[1];
-val = person.hobbies.length;
-val = person.address;
-val = person.address.city;
-val = person.address['city'];
-val = person.getBirthYear();
+    if(i == 6){
+        console.log('en sevmediğim sayı: 6')
+        break;
+    }
+    console.log(i);
+}
 
 
-console.log(val);
-console.log(typeof person);
 
-// örnek 2
 
-let people = [
-                     {firstName : 'ceren', lastName : 'efe'},
-                     {firstName : 'ali', lastName : 'turan'},
-                     {firstName : 'veli', lastName : 'kaya'},
-            ];
 
-val = people;
-val = people[2];
-val = people[1].firstName;
 
-console.log(val);
-console.log(typeof people);
+
+
+
+
