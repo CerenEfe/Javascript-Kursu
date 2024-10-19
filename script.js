@@ -496,21 +496,72 @@
 
 // DERS 14 : KOŞULLU DURUM UYGULAMASI +++++++++++++++++++++++++++++++++++++++++++++++++
 
-var result = prompt('who\'s there ?');
+// var result = prompt('who\'s there ?');
 
-if (result == 'cancel'){
-    console.log('cancelled');
-}else if (result == 'admin'){
+// if (result == 'cancel'){
+//     console.log('cancelled');
+// }else if (result == 'admin'){
     
-    var password = prompt('enter your password: ');
+//     var password = prompt('enter your password: ');
 
-    if(password == 'cancel'){
-        console.log('cancelled');    
-    }else if(password == '1234'){
-        console.log('welcome admin');
+//     if(password == 'cancel'){
+//         console.log('cancelled');    
+//     }else if(password == '1234'){
+//         console.log('welcome admin');
+//     }
+// }else{
+//     console.log('seni tanımıyorum');
+// }
+
+
+// DERS 15 : OBJECT +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// object literals
+
+let val;
+
+let person = {
+    firstName : 'ceren',
+    lastName : 'efe',
+    age : 7,
+    hobbies : ['music', 'book'],
+    address : {
+        city : 'kocaeli',
+        country : 'türkiye'
+    },
+    getBirthYear : function(){
+        return 2018 - this.age;
     }
-}else{
-    console.log('seni tanımıyorum');
-}
+};
+
+val = person;
+val = person.firstName;
+val = person.lastName;
+val = person['firstName'];
+val = person.age;
+val = person.hobbies;
+val = person.hobbies[1];
+val = person.hobbies.length;
+val = person.address;
+val = person.address.city;
+val = person.address['city'];
+val = person.getBirthYear();
 
 
+console.log(val);
+console.log(typeof person);
+
+// örnek 2
+
+let people = [
+                     {firstName : 'ceren', lastName : 'efe'},
+                     {firstName : 'ali', lastName : 'turan'},
+                     {firstName : 'veli', lastName : 'kaya'},
+            ];
+
+val = people;
+val = people[2];
+val = people[1].firstName;
+
+console.log(val);
+console.log(typeof people);
