@@ -646,34 +646,65 @@
 
 // örnek 1
 
-function yasHesapla(doğumYili){
-    return 2018 - doğumYili;
-}
+// function yasHesapla(doğumYili){
+//     return 2018 - doğumYili;
+// }
 
-let ageAda = yasHesapla(2010);
-let ageCeren = yasHesapla(2000);
-let ageHakan = yasHesapla(2017);
+// let ageAda = yasHesapla(2010);
+// let ageCeren = yasHesapla(2000);
+// let ageHakan = yasHesapla(2017);
 
-console.log(ageAda);
-console.log(ageCeren);
-console.log(ageHakan);
+// console.log(ageAda);
+// console.log(ageCeren);
+// console.log(ageHakan);
 
-// örnek 2
+// // örnek 2
 
-function EmekligeKacYilKaldi(doğumYili,isim){
-    let yas = yasHesapla(doğumYili);
-    let emeklilik = 65 - yas;
+// function EmekligeKacYilKaldi(doğumYili,isim){
+//     let yas = yasHesapla(doğumYili);
+//     let emeklilik = 65 - yas;
 
-    if(emeklilik>0){
+//     if(emeklilik>0){
         
-        console.log(isim + ' emekli olmana ' + emeklilik + ' yıl kaldı');
+//         console.log(isim + ' emekli olmana ' + emeklilik + ' yıl kaldı');
 
-    }else {
-        console.log('zaten emeklisiniz');
-    }
-}
+//     }else {
+//         console.log('zaten emeklisiniz');
+//     }
+// }
 
-EmekligeKacYilKaldi(2012,'ada');
-EmekligeKacYilKaldi(2010,'ceren');
-EmekligeKacYilKaldi(1950,'hakan');
+// EmekligeKacYilKaldi(2012,'ada');
+// EmekligeKacYilKaldi(2010,'ceren');
+// EmekligeKacYilKaldi(1950,'hakan');
+
+
+// DERS 19 : DOCUMENT OBJECT MODEL (DOM) +++++++++++++++++++++++++++++++++++++++++++++++++
+
+let val;
+
+val = window.document;
+val = document.all;
+val = document.all.length;
+val = document.all[2];
+val = document.head;
+val = document.body;
+val = document.anchors;
+val = document.URL;
+val = document.domain;
+val = document.images;
+val = document.title;
+val = document.forms;
+val = document.scripts;
+val = document.scripts.length;
+val = document.scripts[0];
+val = document.scripts[0].getAttribute('src');
+
+
+console.log(val);
+
+
+
+
+
+
 
