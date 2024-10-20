@@ -617,27 +617,63 @@
 
 // DERS 17 : DÖNGÜLER UYGULAMALI ÖRNEK +++++++++++++++++++++++++++++++++++++++++++++++++
 
+// var hak = 5;
+// var tahmin;
+// var sayi = Math.floor((Math.random()*10)+1);
 
-var hak = 5;
-var tahmin;
-var sayi = Math.floor((Math.random()*10)+1);
+// console.log(sayi);
 
-console.log(sayi);
+// while(hak>0){
+//     hak--;
+//     tahmin = Number(prompt('bir sayı giriniz'));
 
-while(hak>0){
-    hak--;
-    tahmin = Number(prompt('bir sayı giriniz'));
+//     if(sayi == tahmin){
+//         console.log('tebrikler bildiniz');
+//         break;
+//     }else if(sayi > tahmin){
+//         console.log('yukarı');
+//     }else{
+//         console.log('aşağı');
+//     }
 
-    if(sayi == tahmin){
-        console.log('tebrikler bildiniz');
-        break;
-    }else if(sayi > tahmin){
-        console.log('yukarı');
-    }else{
-        console.log('aşağı');
-    }
+//     if(hak == 0){
+//         console.log('hakkınız bitti');
+//     }
+// }
 
-    if(hak == 0){
-        console.log('hakkınız bitti');
+
+// DERS 18 : FONKSİYONLAR +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// örnek 1
+
+function yasHesapla(doğumYili){
+    return 2018 - doğumYili;
+}
+
+let ageAda = yasHesapla(2010);
+let ageCeren = yasHesapla(2000);
+let ageHakan = yasHesapla(2017);
+
+console.log(ageAda);
+console.log(ageCeren);
+console.log(ageHakan);
+
+// örnek 2
+
+function EmekligeKacYilKaldi(doğumYili,isim){
+    let yas = yasHesapla(doğumYili);
+    let emeklilik = 65 - yas;
+
+    if(emeklilik>0){
+        
+        console.log(isim + ' emekli olmana ' + emeklilik + ' yıl kaldı');
+
+    }else {
+        console.log('zaten emeklisiniz');
     }
 }
+
+EmekligeKacYilKaldi(2012,'ada');
+EmekligeKacYilKaldi(2010,'ceren');
+EmekligeKacYilKaldi(1950,'hakan');
+
