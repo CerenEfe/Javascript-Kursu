@@ -680,31 +680,51 @@
 
 // DERS 19 : DOCUMENT OBJECT MODEL (DOM) +++++++++++++++++++++++++++++++++++++++++++++++++
 
+// let val;
+
+// val = window.document;
+// val = document.all;
+// val = document.all.length;
+// val = document.all[2];
+// val = document.head;
+// val = document.body;
+// val = document.anchors;
+// val = document.URL;
+// val = document.domain;
+// val = document.images;
+// val = document.title;
+// val = document.forms;
+// val = document.scripts;
+// val = document.scripts.length;
+// val = document.scripts[0];
+// val = document.scripts[0].getAttribute('src');
+
+
+// console.log(val);
+
+
+// DERS 20 :  DOM TANIYALIM +++++++++++++++++++++++++++++++++++++++++++++++++
+
 let val;
 
 val = window.document;
 val = document.all;
 val = document.all.length;
-val = document.all[2];
+val = document.all[12];
 val = document.head;
 val = document.body;
-val = document.anchors;
 val = document.URL;
 val = document.domain;
 val = document.images;
 val = document.title;
 val = document.forms;
+val = document.forms[0];
+val = document.forms[0].id;
+val = document.forms[0].action;
 val = document.scripts;
-val = document.scripts.length;
-val = document.scripts[0];
-val = document.scripts[0].getAttribute('src');
+val = document.scripts[2].getAttribute('src');
+
+
 
 
 console.log(val);
-
-
-
-
-
-
-
