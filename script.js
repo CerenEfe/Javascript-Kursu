@@ -732,9 +732,10 @@
 
 // Selecting Elements
 
-// *** Single Elements
+// *** Single Elements (tekli element seçerken aşağıdaki 2 seçeneği kullanabiliyoruz)
 
-// document.getElementById()
+// 1- document.getElementById()
+// 2- document.querySelector()
 
 // let val;
 
@@ -764,17 +765,57 @@
 // ----2.kısım----
 // document.querySelector()
 
-console.log(document.querySelector('#header'));
-console.log(document.querySelector('.card-header'));
+// console.log(document.querySelector('#header'));
+// console.log(document.querySelector('.card-header'));
 
-document.querySelector('li').style.color= 'red';
-document.querySelector('li:last-child').style.color= 'blue';
-document.querySelector('li:nth-child(2)').style.color= 'yellow';
-document.querySelector('li:nth-child(3)').textContent ='Task item';
+// document.querySelector('li').style.color= 'red';
+// document.querySelector('li:last-child').style.color= 'blue';
+// document.querySelector('li:nth-child(2)').style.color= 'yellow';
+// document.querySelector('li:nth-child(3)').textContent ='Task item';
 
-// document.querySelector('li').className = 'ist-group-item list-group-item-primary';
+// // document.querySelector('li').className = 'ist-group-item list-group-item-primary';
 
-document.querySelector('li').classList.add('active');
+// document.querySelector('li').classList.add('active');
+
+// DERS 22 : ÇOKLU ELEMENT SEÇİMİ +++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 // *** Multiple Elements
+
+// class name
+// document.getElementsByClassName()
+
+// let val;
+
+// val = document.getElementsByClassName('list-group-item');
+
+// // val = document.getElementsByClassName('list-group-item')[2];
+
+// // val = val[2];
+
+// val[1].style.color='blue';
+// val[1].style.fontSize='25px';
+// val[2].textContent='new item';
+
+// for(let i=0; i<val.length;i++){
+//     console.log(val[i].style.color='red');
+//     console.log(val[i].textContent='new item');
+// }
+
+
+// console.log(val);
+
+
+let val;
+
+// val = document.getElementsByTagName('li');
+// val = document.getElementById('task-list');
+// val = val.getElementsByTagName('a');
+
+
+// document.querySelectorAll()
+
+val = document.querySelectorAll('li');
+
+console.log(val);
+
