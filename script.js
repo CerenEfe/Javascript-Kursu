@@ -703,28 +703,78 @@
 // console.log(val);
 
 
-// DERS 20 :  DOM TANIYALIM +++++++++++++++++++++++++++++++++++++++++++++++++
+// DERS 20 : DOM TANIYALIM +++++++++++++++++++++++++++++++++++++++++++++++++
 
-let val;
+// let val;
 
-val = window.document;
-val = document.all;
-val = document.all.length;
-val = document.all[12];
-val = document.head;
-val = document.body;
-val = document.URL;
-val = document.domain;
-val = document.images;
-val = document.title;
-val = document.forms;
-val = document.forms[0];
-val = document.forms[0].id;
-val = document.forms[0].action;
-val = document.scripts;
-val = document.scripts[2].getAttribute('src');
-
-
+// val = window.document;
+// val = document.all;
+// val = document.all.length;
+// val = document.all[12];
+// val = document.head;
+// val = document.body;
+// val = document.URL;
+// val = document.domain;
+// val = document.images;
+// val = document.title;
+// val = document.forms;
+// val = document.forms[0];
+// val = document.forms[0].id;
+// val = document.forms[0].action;
+// val = document.scripts;
+// val = document.scripts[2].getAttribute('src');
 
 
-console.log(val);
+// console.log(val);
+
+
+// DERS 21 : TEKİL ELEMENT SEÇİMİ +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Selecting Elements
+
+// *** Single Elements
+
+// document.getElementById()
+
+// let val;
+
+// val = document.getElementById('header'); 
+// val = document.getElementById('header').id;
+// val = document.getElementById('header').className;
+
+// val = document.getElementById('header');
+// // val = val.id;
+// // val = val.className;
+
+// val.style.fontSize = '45px';
+// val.style.color = 'red';
+// val.style.fontWeight = 'bold';
+// // val.style.display='none';
+
+// document.getElementById('header').innerText = 'My To Do App';
+
+// document.getElementById('header').innerText = '<b>My To Do App</b>';
+
+// document.getElementById('header').innerHTML = '<b>My To Do App</b>';
+
+
+// console.log(val);
+
+
+// ----2.kısım----
+// document.querySelector()
+
+console.log(document.querySelector('#header'));
+console.log(document.querySelector('.card-header'));
+
+document.querySelector('li').style.color= 'red';
+document.querySelector('li:last-child').style.color= 'blue';
+document.querySelector('li:nth-child(2)').style.color= 'yellow';
+document.querySelector('li:nth-child(3)').textContent ='Task item';
+
+// document.querySelector('li').className = 'ist-group-item list-group-item-primary';
+
+document.querySelector('li').classList.add('active');
+
+
+// *** Multiple Elements
