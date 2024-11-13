@@ -806,16 +806,51 @@
 // console.log(val);
 
 
+// let val;
+
+// // val = document.getElementsByTagName('li');
+// // val = document.getElementById('task-list');
+// // val = val.getElementsByTagName('a');
+
+
+// // document.querySelectorAll()
+
+// val = document.querySelectorAll('li');
+
+// console.log(val);
+
+
+// DERS 23 : ELEMENTLER ÜZERİNDE GEZİNME +++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 let val;
 
-// val = document.getElementsByTagName('li');
-// val = document.getElementById('task-list');
-// val = val.getElementsByTagName('a');
+let list = document.querySelector('.list-group');
+val = list;
+val = list.childNodes;
+val = list.childNodes[0];
+val = list.childNodes[0].nodeName;
+val = list.childNodes[0].nodeType;  //Text
+val = list.childNodes[1].nodeType;  //Element
 
+val = list.children;
+val = list.children[0];
+val = list.children[2];
 
-// document.querySelectorAll()
+val = list.children[2].textContent ='new item';
+val = list.children[3].children;
 
-val = document.querySelectorAll('li');
+val = list.firstChild;
+val = list.firstElementChild;
+
+val = list.lastChild;
+val = list.lastElementChild;
+
+val = list.childElementCount;
+
 
 console.log(val);
+
+
+
 
