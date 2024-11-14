@@ -823,33 +823,66 @@
 // DERS 23 : ELEMENTLER ÜZERİNDE GEZİNME +++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-let val;
+// let val;
 
-let list = document.querySelector('.list-group');
-val = list;
-val = list.childNodes;
-val = list.childNodes[0];
-val = list.childNodes[0].nodeName;
-val = list.childNodes[0].nodeType;  //Text
-val = list.childNodes[1].nodeType;  //Element
+// let list = document.querySelector('.list-group');
+// val = list;
+// val = list.childNodes;
+// val = list.childNodes[0];
+// val = list.childNodes[0].nodeName;
+// val = list.childNodes[0].nodeType;  //Text
+// val = list.childNodes[1].nodeType;  //Element
 
-val = list.children;
-val = list.children[0];
-val = list.children[2];
+// val = list.children;
+// val = list.children[0];
+// val = list.children[2];
 
-val = list.children[2].textContent ='new item';
-val = list.children[3].children;
+// val = list.children[2].textContent ='new item';
+// val = list.children[3].children;
 
-val = list.firstChild;
-val = list.firstElementChild;
+// val = list.firstChild;
+// val = list.firstElementChild;
 
-val = list.lastChild;
-val = list.lastElementChild;
+// val = list.lastChild;
+// val = list.lastElementChild;
 
-val = list.childElementCount;
+// val = list.childElementCount;
 
 
-console.log(val);
+//console.log(val);
+
+
+// DERS 24 : DOM ELEMENTLERİNİ OLUŞTURMA +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// creat element
+
+const li = document.createElement('li');
+
+// add class
+li.className ='list-group-item list-group-item-secondary';
+
+// attribute
+li.setAttribute('title','new title');
+li.setAttribute('data-id','5');
+
+// text node
+const text = document.createTextNode('new item');
+li.appendChild(text);
+
+const a = document.createElement('a');
+a.setAttribute('href','#');
+a.className='delete-item float-right';
+a.innerHTML ='<i class="fas fa-times"></i>';
+
+li.appendChild(a);  //append a to li
+
+// append li to ul
+document.querySelector('#task-list').appendChild(li);
+
+//document.getElementById('task-list').appendChild(li);
+
+console.log(li);
+
 
 
 
