@@ -886,7 +886,7 @@
 
 // DERS 25 : DOM ELEMENTLERİNİ SİLME +++++++++++++++++++++++++++++++++++++++++++++++++
 
-const taskList = document.querySelector('#task-list');
+// const taskList = document.querySelector('#task-list');
 
 // ** removing element
 // taskList.remove();
@@ -916,28 +916,66 @@ const taskList = document.querySelector('#task-list');
 
 // ** Classes
 
-let val;
+// let val;
 
-link = taskList.children[0].children[0];
+// link = taskList.children[0].children[0];
 
-// val = link.className;
-// val = link.classList;
-// val = link.classList[0];
-// val = link.classList[1];
+// // val = link.className;
+// // val = link.classList;
+// // val = link.classList[0];
+// // val = link.classList[1];
 
-link.classList.add('new');
-link.classList.remove('new');
+// link.classList.add('new');
+// link.classList.remove('new');
 
-// Attribues
-val = link.getAttribute('data-id');
-val = link.getAttribute('href');
-val = link.setAttribute('href','http://cerenefe.com');
-val = link.hasAttribute('data-val');
+// // Attribues
+// val = link.getAttribute('data-id');
+// val = link.getAttribute('href');
+// val = link.setAttribute('href','http://cerenefe.com');
+// val = link.hasAttribute('data-val');
+
+// console.log(val);
+
+
+// DERS 26 : EVENT LİSTENERS +++++++++++++++++++++++++++++++++++++++++++++++++
+
+ const btn = document.querySelector('#btnDeleteAll');
+const btn2 = document.querySelector('#btnAddNewTask');
+
+  btn.addEventListener('click',function(e){
+      
+    let val;
+
+    val = e;
+
+    val = e.target;
+    val = e.target.id;
+    val = e.target.classList;
+    val = e.type;
+
+    console.log(val);
+
+    e.preventDefault();
+  });
+
+// btn.addEventListener('click',btnClick);
+// btn.addEventListener('click',btnClick2);
+// btn2.addEventListener('click',btnClick);
+
+//  function btnClick(){
+//     console.log('btn clicked');
+//  }
+
+//  function btnClick2(){
+//     console.log('btn 2 clicked');
+//  }
 
 
 
 
 
-console.log(val);
+
+
+
 
 
